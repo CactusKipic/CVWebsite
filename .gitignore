@@ -2,6 +2,8 @@
 
 # Custom
 angular.json
+/src/assets/img
+/src/app/app.component-old.html
 
 # compiled output
 /dist
