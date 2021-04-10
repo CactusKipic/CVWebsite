@@ -1,6 +1,10 @@
-<div class="WIP"><p>Work in Progress</p>
+<div class="WIP"><p>Work still in Progress</p>
 </div>
 <div class="main-fastInfos">
+    <div class="main-fastLinks">
+        <a href="https://links.cactus-industries.fr/GitHub" target="_blank"><img src="/assets/img/github.png" class="main-icon"></a>
+        <a href="https://links.cactus-industries.fr/LinkedIn" target="_blank"><img src="/assets/img/linkedin.png" class="main-icon"></a>
+    </div>
     <div>
         <img src="/assets/img/Photo_ID.jpg" class="main-PhotoID">
     </div>
@@ -20,4 +24,139 @@
         apprenti au Crédit Agricole Payment Services et étudiant en école
         d'informatique.
     </p>
+    <mat-divider></mat-divider>
+    <h2>Mon parcours</h2>
+    <div class="main-parcours">
+        <div>
+            <div class="main-parcours-ligne">
+                <button class="main-bouton-parcours"
+                        (click)="toggleButton('ESIEA')">
+                    <mat-icon>
+                        {{getButtonValue("ESIEA")?'expand_more':'chevron_right'}}
+                    </mat-icon>
+                </button> <p> 2019-2022 | Cycle Ingénieur à l'ESIEA en Apprentissage au Crédit Agricole Payment Services</p>
+            </div>
+            <mat-tab-group *ngIf="getButtonValue('ESIEA')" class="main-parcours-tabs">
+                <mat-tab label="Portfolio">
+                    <mat-card class="main-parcours-card">
+                        <mat-card-header>
+                            <mat-card-title>Site Portfolio en Angular</mat-card-title>
+                            <mat-card-subtitle>Un site internet accessible par tous, permettant de faire une vitrine de mes projets et mon parcours</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>À l'occasion de ma 4ème année en école d'ingénieur à l'ESIEA,
+                            nous avons eu comme proposition de créer notre propre site portfolio
+                            lors d'un cours. J'ai alors décidé de créer ce site avec le framework de Google Angular,
+                            afin d'apprendre à composer un site fonctionnel et grandement personnalisable.
+                            Compétence qui, sans aucun doute me servira tout au long de ma vie,
+                            que ce soit pour des projets professionnels ou personnels.</p>
+                        </mat-card-content>
+                    </mat-card>
+                </mat-tab>
+                <!--mat-tab label="2eme projet"> Wahou super projet ! Encore !</mat-tab-->
+            </mat-tab-group>
+        </div>
+        <div>
+            <div class="main-parcours-ligne">
+                <button class="main-bouton-parcours"
+                    (click)="toggleButton('DUT')">
+                    <mat-icon>
+                        {{getButtonValue("DUT")?'expand_more':'chevron_right'}}
+                    </mat-icon>
+                </button> <p> 2017-2019 | DUT Génie Électrique et Informatique Industrielle à l'IUT de Cachan</p>
+            </div>
+            <mat-tab-group *ngIf="getButtonValue('DUT')" class="main-parcours-tabs">
+                <mat-tab label="Lévitation d'un aimant">
+                    <mat-card class="main-parcours-card">
+                        <mat-card-header>
+                            <mat-card-title>Lévitation d'un aimant</mat-card-title>
+                            <mat-card-subtitle>Asservissement d'un électroaimant pour réaliser une lévitation d'aimant</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>À l'occasion d'un cours sur l'électromagnétisme, il nous a été
+                            demandé de réaliser une expérience permettant de mettre en scène
+                            l'électromagnétisme. Le choix du sujet était libre, j'ai donc choisit
+                            avec un ami de réaliser une expérience visuelle impressionnante qui est
+                            de réussir à faire léviter un aimant grâce à un seul électroaimant et
+                            l'aide d'un capteur.</p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-raised-button class="main-parcours-card-button">Voir le projet en détails <mat-icon>open_in_new</mat-icon></button>
+                        </mat-card-actions>
+                    </mat-card>
+                </mat-tab>
+                <mat-tab label="Hackathon de robotique">
+                    <mat-card class="main-parcours-card">
+                        <mat-card-header>
+                            <mat-card-title>Hackathon de robotique</mat-card-title>
+                            <mat-card-subtitle>Participation à un hackathon en équipe au festival de robotique de Cachan de 2018</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>À l'occasion du festival de robotique de Cachan, organisé par mon IUT
+                            j'ai pu participer à un hackathon de 3 jours avec pour but la programmation
+                            en petite équipe de 3 personnes d'un robot jouant à un jeu de tennis adapté
+                            pour des robots. L'objectif étant de repérer et récupérer des balles de tennis dans notre
+                            camps pour les envoyer chez l'adversaire.<br>
+                            L'expérience aura été bonne, quoi qu'un vrai casse-tête par moment, entre manque de sommeil
+                            et bug. Mon équipe arrivera tout de même à la 3ème place.</p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-raised-button class="main-parcours-card-button">Voir le projet en détails <mat-icon>open_in_new</mat-icon></button>
+                        </mat-card-actions>
+                    </mat-card>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+        <div>
+            <div class="main-parcours-ligne">
+                <button class="main-bouton-parcours"
+                    (click)="toggleButton('Lycee')">
+                    <mat-icon>
+                        {{getButtonValue("Lycee")?'expand_more':'chevron_right'}}
+                    </mat-icon>
+                </button> <p> 2014-2016 | Bac S Sciences de l'Ingénieur au Lycée Diderot (19e arrondissement)</p>
+            </div>
+            <mat-tab-group *ngIf="getButtonValue('Lycee')" class="main-parcours-tabs">
+                <mat-tab label="ShareBitly">
+                    <mat-card class="main-parcours-card">
+                        <mat-card-header>
+                            <mat-card-title>ShareBitly : Raccourcisseur de liens</mat-card-title>
+                            <mat-card-subtitle>Application Androïd permettant de raccourcir des liens web grâce à l'API Bit.ly</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>À l'occasion de mon option Informatique et Science du Numérique pour mon Bac,
+                                j'ai réaliser une application Androïd permettant de raccourcir des liens en
+                                utilisant l'API du site <a href="https://bitly.com" target="_blank">Bitly</a>, célèbre site permettant
+                                de créer un lien court de redirection public qui enregistre le traffic. L'objectif
+                                de l'application est de permettre à un utilisateur de partager un lien, via la
+                                fonction share, et de pouvoir en faire un lien raccourci. Qui de plus sera enregistré,
+                                et donnera la possibilité d'obtenir le nombre d'utilisation du lien créer et ses détails.</p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-raised-button class="main-parcours-card-button">Voir le projet en détails <mat-icon>open_in_new</mat-icon></button>
+                        </mat-card-actions>
+                    </mat-card>
+                </mat-tab>
+                <mat-tab label="Poubelle Intelligente">
+                    <mat-card class="main-parcours-card">
+                        <mat-card-header>
+                            <mat-card-title>Poubelle Intelligente</mat-card-title>
+                            <mat-card-subtitle>Modification d'une poubelle automatique pour qu'elle n'accepte que les objets en métal</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>À l'occasion de mon option Sciences de l'Ingénieur, j'ai réaliser en groupe
+                            la modification d'une poubelle automatique, ayant une ouverture avec un capteur
+                            mouvement, afin qu'elle s'ouvre lorsqu'on lui présente un objet métallique, tel
+                            qu'un canette. Cela a été réalisé grâce à un détecteur de métal à distance commandant
+                            l'ouverture de la poubelle. L'objectif étant de créer une poubelle de recyclage
+                            de métal qui force l'utilisateur à n'y jeter que les déchets adapté à la poubelle.</p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-raised-button class="main-parcours-card-button">Voir le projet en détails <mat-icon>open_in_new</mat-icon></button>
+                        </mat-card-actions>
+                    </mat-card>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
 </div>

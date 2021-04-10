@@ -10,12 +10,12 @@
 .page-content {
     position: absolute;
     display: block;
-    padding: 0 400px;
     align-items: center;
     margin-top: 90px;
     left: 0;
     margin-right: 0;
     margin-bottom: 60px;
+    padding: 0 400px 250px;
 }
 
 body {

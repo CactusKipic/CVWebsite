@@ -13,6 +13,26 @@
     margin-left: 15%;
 }
 
+.main-fastLinks {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: inherit;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.main-icon {
+    width: 100%;
+    max-width: 45px;
+    margin-right: 8px;
+}
+
 .main-fastInfos-text {
     font-family: Ebrima, sans-serif;
     padding-left: 15px;
@@ -23,6 +43,49 @@
 .main-PhotoID {
     height: 175px;
     width: auto;
+}
+
+.main-parcours {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: inherit;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.main-parcours-ligne {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+.main-bouton-parcours {
+    background-color: #00000000;
+    border: none;
+}
+
+.main-parcours-card-button {
+    background-color: #ffffffaa;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-parcours-tabs {
+    min-height: 300px;
+}
+
+.main-parcours-card {
+    padding: 15px;
+    max-width: 560px;
+    background-color: rgb(246, 242, 253);
 }
 
 .main-text{
