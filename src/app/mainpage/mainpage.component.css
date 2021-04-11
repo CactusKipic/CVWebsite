@@ -7,10 +7,15 @@
 
 .main-fastInfos {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-fastInfos-bloc {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     text-align: left;
-    margin-right: 15%;
-    margin-left: 15%;
 }
 
 .main-fastLinks {
@@ -28,8 +33,7 @@
 }
 
 .main-icon {
-    width: 100%;
-    max-width: 45px;
+    width: 45px;
     margin-right: 8px;
 }
 
@@ -56,20 +60,26 @@
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin: 0;
+    margin-bottom: 25px;
 }
 
 .main-parcours-ligne {
     display: flex;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    line-height: 0;
+    line-height: 100%;
+    padding: 8px 0px;
+}
+
+.main-parcours-texte {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .main-bouton-parcours {
-    background-color: #00000000;
+    background-color: #0000000F;
     border: none;
+    border-radius: 22px;
+    height: 45px;
+    width: 45px;
 }
 
 .main-parcours-card-button {
@@ -80,6 +90,9 @@
 
 .main-parcours-tabs {
     min-height: 300px;
+    max-width: 700px;
+    background-color: #00000005;
+    margin-left: 45px;
 }
 
 .main-parcours-card {

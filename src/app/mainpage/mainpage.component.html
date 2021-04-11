@@ -1,19 +1,21 @@
 <div class="WIP"><p>Work still in Progress</p>
 </div>
 <div class="main-fastInfos">
-    <div class="main-fastLinks">
-        <a href="https://links.cactus-industries.fr/GitHub" target="_blank"><img src="/assets/img/github.png" class="main-icon"></a>
-        <a href="https://links.cactus-industries.fr/LinkedIn" target="_blank"><img src="/assets/img/linkedin.png" class="main-icon"></a>
-    </div>
-    <div>
-        <img src="/assets/img/Photo_ID.jpg" class="main-PhotoID">
-    </div>
-    <div class="main-fastInfos-text">
-        <p> Clément AZAN <br>
-            Étudiant ingénieur à l'ESIEA<br>
-            Apprenti Ingénieur en Développement Logiciel<br>
-            <a href="mailto:azan@et.esiea.fr">azan@et.esiea.fr</a>
-        </p>
+    <div class="main-fastInfos-bloc">
+        <div class="main-fastLinks">
+            <a href="https://links.cactus-industries.fr/GitHub" target="_blank"><img src="/assets/img/github.png" class="main-icon"></a>
+            <a href="https://links.cactus-industries.fr/LinkedIn" target="_blank"><img src="/assets/img/linkedin.png" class="main-icon"></a>
+        </div>
+        <div>
+            <img src="/assets/img/Photo_ID.jpg" class="main-PhotoID">
+        </div>
+        <div class="main-fastInfos-text">
+            <p> <b>Clément AZAN</b> <br>
+                Étudiant ingénieur à l'ESIEA<br>
+                Apprenti Ingénieur en Développement Logiciel<br>
+                <a href="mailto:azan@et.esiea.fr">azan@et.esiea.fr</a>
+            </p>
+        </div>
     </div>
 </div>
 
@@ -34,7 +36,7 @@
                     <mat-icon>
                         {{getButtonValue("ESIEA")?'expand_more':'chevron_right'}}
                     </mat-icon>
-                </button> <p> 2019-2022 | Cycle Ingénieur à l'ESIEA en Apprentissage au Crédit Agricole Payment Services</p>
+                </button> <p class="main-parcours-texte"> 2019-2022 | Cycle Ingénieur à l'ESIEA en Apprentissage au Crédit Agricole Payment Services</p>
             </div>
             <mat-tab-group *ngIf="getButtonValue('ESIEA')" class="main-parcours-tabs">
                 <mat-tab label="Portfolio">
@@ -63,7 +65,7 @@
                     <mat-icon>
                         {{getButtonValue("DUT")?'expand_more':'chevron_right'}}
                     </mat-icon>
-                </button> <p> 2017-2019 | DUT Génie Électrique et Informatique Industrielle à l'IUT de Cachan</p>
+                </button> <p class="main-parcours-texte"> 2017-2019 | DUT Génie Électrique et Informatique Industrielle à l'IUT de Cachan</p>
             </div>
             <mat-tab-group *ngIf="getButtonValue('DUT')" class="main-parcours-tabs">
                 <mat-tab label="Lévitation d'un aimant">
@@ -114,7 +116,7 @@
                     <mat-icon>
                         {{getButtonValue("Lycee")?'expand_more':'chevron_right'}}
                     </mat-icon>
-                </button> <p> 2014-2016 | Bac S Sciences de l'Ingénieur au Lycée Diderot (19e arrondissement)</p>
+                </button> <p class="main-parcours-texte"> 2014-2016 | Bac S Sciences de l'Ingénieur au Lycée Diderot (19e arrondissement)</p>
             </div>
             <mat-tab-group *ngIf="getButtonValue('Lycee')" class="main-parcours-tabs">
                 <mat-tab label="ShareBitly">
@@ -159,4 +161,8 @@
             </mat-tab-group>
         </div>
     </div>
+    <mat-divider></mat-divider>
+
+    <h2>Mes compétences</h2>
+
 </div>

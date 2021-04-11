@@ -1,21 +1,26 @@
-.navbar {
+.global {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.navbar {
     height: 80px;
     background-color: burlywood;
 }
 
 .page-content {
-    position: absolute;
     display: block;
     align-items: center;
-    margin-top: 90px;
     left: 0;
-    margin-right: 0;
-    margin-bottom: 60px;
-    padding: 0 400px 250px;
+    margin: 0px 17.5% 60px;
+    padding: 15px 8px 250px;
+    background-color: #77777710;
 }
 
 body {
