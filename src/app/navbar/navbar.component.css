@@ -7,12 +7,25 @@ section {
 .second {
     background-color: aqua;
 }
-.logo-place {
-    display: table-cell;
+
+.navbar-header {
+    display: flex;
+    text-align: start;
+}
+
+.nav-logo-place {
+    display: block;
+    margin: 0 8px 0;
+}
+
+.nav-logo-image {
+    vertical-align: middle;
+    margin: 0 0 -50%;
     text-align: center;
-    font-size: 14px;
-    margin-left: 8px;
-    min-width: 120px;
+    padding: 8px 0;
+    font-size: 20px;
+    max-width: 120px;
+    max-height: 120px;
 }
 
 .nav-buttonbar {

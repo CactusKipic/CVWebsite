@@ -3,8 +3,8 @@
 <div class="main-fastInfos">
     <div class="main-fastInfos-bloc">
         <div class="main-fastLinks">
-            <a href="https://links.cactus-industries.fr/GitHub" target="_blank"><img src="/assets/img/github.png" class="main-icon"></a>
-            <a href="https://links.cactus-industries.fr/LinkedIn" target="_blank"><img src="/assets/img/linkedin.png" class="main-icon"></a>
+            <a href="https://links.cactus-industries.fr/GitHub" target="_blank"><img src="/assets/img/svg/Github.svg" class="main-icon"></a>
+            <a href="https://links.cactus-industries.fr/LinkedIn" target="_blank"><img src="/assets/img/svg/Linkedin.svg" class="main-icon"></a>
         </div>
         <div>
             <img src="/assets/img/Photo_ID.jpg" class="main-PhotoID">
@@ -164,5 +164,27 @@
     <mat-divider></mat-divider>
 
     <h2>Mes compétences</h2>
+    <div class="main-competence-buttons">
+        <button mat-raised-button (click)="resetTypes()"
+                class="main-competence-button">Tout</button>
 
+        <button mat-raised-button (click)="toggleType(this, 'app')"
+                [ngClass]="!typeToggled('app') ? 'main-competence-button' : 'main-competence-button-active'">
+            Applicatif</button>
+        <button mat-raised-button (click)="toggleType(this, 'web')"
+                [ngClass]="!typeToggled('web') ? 'main-competence-button' : 'main-competence-button-active'">
+            Web</button>
+        <button mat-raised-button (click)="toggleType(this, 'ide')"
+                [ngClass]="!typeToggled('ide') ? 'main-competence-button' : 'main-competence-button-active'">
+            IDE</button>
+        <button mat-raised-button (click)="toggleType(this, 'database')"
+                [ngClass]="!typeToggled('database') ? 'main-competence-button' : 'main-competence-button-active'">
+            Base de données</button>
+    </div>
+    <div class="main-competence-logos">
+        <div class="main-competence-list">
+            <img class="main-competence-logo" *ngFor="let competence of getCompetences();"
+                 src={{competence.getIconPath()}} matTooltip={{competence.getName()}} matTooltipClass="main-competence-text">
+        </div>
+    </div>
 </div>

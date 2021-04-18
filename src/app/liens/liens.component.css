@@ -1,0 +1,28 @@
+.liens {
+    display: block;
+}
+
+.liens-lignes {
+    margin: 12px 10%;
+}
+
+.liens-block {
+    display: flex;
+    flex-direction: row;
+    margin: 24px 0;
+    height: 120px;
+}
+
+.liens-icon {
+    height: 120px;
+    width: 180px;
+    max-height: 120px;
+    max-width: 180px;
+}
+
+.liens-text {
+    display: block;
+    font-family: Ebrima, sans-serif;
+    font-size: 32px;
+    margin: auto 32px auto;
+}

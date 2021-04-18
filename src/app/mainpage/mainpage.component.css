@@ -101,6 +101,58 @@
     background-color: rgb(246, 242, 253);
 }
 
+.main-competence-buttons {
+    display: block;
+}
+
+.main-competence-buttons .mat-button-base {
+    margin: 8px 8px 8px;
+    padding: 0 12px;
+    border-radius: 5px;
+    font-family:"Segoe UI", Century Gothic, serif;
+    font-size: 16px;
+}
+
+.main-competence-button {
+    background-color: #ffffff;
+}
+
+.main-competence-button-active {
+    background-color: #cccccc;
+}
+
+.main-competence-logos {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 75%;
+    max-width: 75%;
+}
+
+.main-competence-list {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-competence-logo {
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    padding: 8px;
+}
+
+.main-competence-text {
+    font-size: 16px;
+    position: relative;
+    top: -80px;
+    max-width: 85px;
+}
+
 .main-text{
     font-family: Ebrima, sans-serif;
     font-size: 20px;

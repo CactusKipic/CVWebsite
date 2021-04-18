@@ -8,17 +8,27 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import { AppRoutingModule } from './app-routing.module';
+import { ProjetsTechniquesComponent } from './projets-techniques/projets-techniques.component';
+import { ProjetsPersosComponent } from './projets-persos/projets-persos.component';
+import { LiensComponent } from './liens/liens.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainpageComponent,
     NavbarComponent,
+    ProjetsTechniquesComponent,
+    ProjetsPersosComponent,
+    LiensComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +39,9 @@ import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
     MatDividerModule,
     MatCardModule,
     MatTreeModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTooltipModule,
+    AppRoutingModule
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },

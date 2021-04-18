@@ -1,0 +1,11 @@
+.projet-tech {
+    text-align: center;
+}
+
+.projet-tech-text {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 32px auto 48px;
+    max-width: 66%;
+}
